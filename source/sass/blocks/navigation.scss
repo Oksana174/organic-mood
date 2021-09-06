@@ -1,0 +1,120 @@
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    @media (max-width: 1199px) {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transform: translateY(100%);
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.15s opacity;
+        border-top: 1px solid $color-shadow;
+    }
+}
+
+.navigation--open {
+    @media (max-width: 1199px) {
+        display: flex;
+        height: calc(100vh - 100px);
+        overflow-y: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    @media (max-width: 767px) {
+        height: calc(100vh - 75px);
+    }
+}
+
+// .navigation--closed {
+//     @media (max-width: 1199px) {
+//         opacity: 0;
+//     }
+// }
+  
+.navigation__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media (max-width: 1199px) {
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 15;
+        background-color: $bg-color;
+        box-shadow: 0 4px 30px rgba(214, 214, 214, 0.19);
+    }
+}
+
+.navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: 1199px) {
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 45px;
+    }
+      
+    @media (max-width: 767px) {
+        padding: 30px 15px 20px;
+    }
+}
+
+.navigation__item {
+    margin-left: 35px;
+
+    @media (max-width: 1199px) {
+        padding: 20px 0;
+        margin-left: 0;
+    }
+      
+    @media (max-width: 767px) {
+        padding: 0;
+
+        & + .navigation__item {
+            margin-top: 35px;
+        }
+    }
+}
+
+.navigation__link {
+    font-size: 16px;
+    display: block;
+    transition: 0.2s;
+    outline: 0;
+
+    &:focus,
+    &:hover,
+    &:active {
+        opacity: 0.9;
+        transition: 0.2s;
+        color: $icon-color;
+    }
+
+    @media (max-width: 1199px) {
+        font-family: "Raleway", "Arial", sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+    }
+      
+    @media (max-width: 767px) {
+        font-size: 28px;
+    }
+}
+
+.navigation__contacts {
+    margin: 0;
+}

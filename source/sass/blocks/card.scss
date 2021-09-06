@@ -1,0 +1,207 @@
+.card {
+    padding: 40px 15px 77px;
+
+    @media (max-width: 1199px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.card__wrapper {
+    display: flex;
+    justify-content: flex-start;
+
+    @media (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card__image-wrapper {
+    margin-right: 70px;
+
+    @media (max-width: 1199px) {
+        margin-right: 0;
+    }
+}
+
+.card__image {
+    width: 630px;
+    height: 647px;
+    object-fit: cover;
+    background-color: $bg_color-card;
+
+    @media (max-width: 1199px) {
+        width: 350px;
+        height: 350px;
+    }
+
+    @media (max-width: 767px) {
+        width: 290px;
+        height: 260px;
+    }
+}
+
+.card__content {
+    padding-top: 41px;
+    width: 400px;
+
+    @media (max-width: 1199px) {
+        width: auto;
+    }
+}
+  
+.card__content-title {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 36px;
+
+    @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 130%;
+    }
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 23px;
+
+    @media (max-width: 1199px) {
+        width: auto;
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.card__info {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 38px;
+    margin-bottom: 30px;
+
+    @media (max-width: 767px) {
+       margin-top: 34px;
+    }
+}
+
+.card__info::before {
+    background: #b3bac1;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.card__accordion {
+    position: relative;
+}
+
+.card__accordion::after {
+    background: #b3bac1;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.card__accordion-head {
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.card__accordion-head:hover {
+    cursor: pointer;
+}
+
+
+.card__accordion-title {
+    font-weight: 500;
+    margin: 0;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 145%;
+    }
+}
+
+.card__accordion-text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.card__option {
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card__option-title {
+    font-weight: 500;
+    margin: 0;
+    margin-right: 40px;
+}
+
+.card__option-value {
+    font-weight: 500;
+    margin: 0;
+}
+
+.card__price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 38px;
+        margin: 0;
+        margin-right: 50px;
+
+        @media (max-width: 767px) {
+            margin-right: 35px;
+            font-size: 22px;
+        }
+    }
+}
+  
+
+.card__button {
+    padding: 7px 26px 10px;
+    border: 1px solid $color-border-btn;
+
+    @media (max-width: 767px) {
+        padding: 10px 27px 10px;
+        font-size: 14px;
+    }
+
+    &:focus,
+    &:hover {
+        border-color:  $icon-color;
+        background-color: $bg-color;
+    }
+      
+    &:active {
+        border-color: $text-main-color;
+    }
+  }
+  
+

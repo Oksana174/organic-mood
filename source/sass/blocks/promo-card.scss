@@ -1,0 +1,74 @@
+.promo-card {
+    outline: 0;
+    background-color: $bg_color-card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:focus,
+    &:hover,
+    &:active {
+        box-shadow: 0 4px 20px $color-shadow;
+    }
+
+    &:focus > .promo-card__text,
+    &:hover > .promo-card__text,
+    &:active > .promo-card__text {
+        transition: 0.2s;
+        opacity: 0.5;
+    }
+}
+
+.promo-card__image {
+    display: block;
+    height: 422px;
+    width: 330px;
+    object-fit: cover;
+    object-position: center;
+    background-color: $bg_color-card;
+
+    @media (max-width: 1199px) {
+        height: 362px;
+        width: 100%;
+    }
+      
+    @media (max-width: 767px) {
+        height: calc((50vw - 30px) / (130 / 170));
+        width: 100%;
+        min-width: 130px;
+    }
+}
+  
+.promo-card__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    transition: 0.2s;
+    padding: 0 10px;
+
+    @media (max-width: 767px) {
+        margin-top: 7px;
+        font-size: 12px;
+        line-height: 17px;
+        padding: 0 3px;
+    }
+      
+}
+  
+.promo-card__icon {
+    height: 12px;
+    width: 26px;
+    margin-left: 20px;
+    fill: $icon-color;
+
+    @media (max-width: 767px) {
+        height: 10px;
+        width: 23px;
+        margin-left: 10px;
+    }
+}
+

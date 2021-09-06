@@ -1,0 +1,47 @@
+.slider {
+    width: 100%;
+    margin: 0;
+}
+  
+.slider__button-container {
+    display: none;
+
+    @media (max-width: 1190px) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    } 
+}
+
+.slider__button {
+    position: absolute;
+    // z-index: 0;
+    // display: flex;
+    height: 12px;
+    width: 26px;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &--prev {
+        background-image: url("../../img/arrow-left.svg");
+        
+    }
+
+    &--next {
+        background-image: url("../../img/main-arrow.svg");
+    }
+}
+
+.slider__button:focus,
+.slider__button:hover,
+.slider__button:active {
+    opacity: 0.5;
+    transition: 0.2s;
+}

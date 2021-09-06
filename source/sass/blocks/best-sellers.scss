@@ -1,0 +1,143 @@
+.best-sellers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 120px;
+      }
+      
+    @media (max-width: 767px) {
+        position: relative;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+}
+  
+.best-sellers__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 230px;
+    min-height: 250px;
+    margin: 0 85px 40px 0;
+
+    @media (max-width: 1199px) {
+        margin-right: 8%;
+        min-width: 37%;
+        max-width: 380px;
+    }
+      
+    @media (max-width: 767px) {
+        align-items: center;
+        margin: 0;
+        margin-bottom: 46px;
+        min-height: auto;
+    }
+}
+
+.best-sellers__title {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+
+    @media (max-width: 767px) {
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 500;
+    }
+}
+
+.best-sellers__description {
+    margin: 0 0 20px;
+    width: 230px;
+
+    @media (max-width: 1199px) {
+        width: 320px;
+    }
+
+    @media (max-width: 767px) {
+        width: 80%;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+.best-sellers__link {
+    margin-top: 20px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+
+    &--mobile {
+        display: none;
+
+        @media (max-width: 767px) {
+            margin-top: 40px;
+            padding: 12px 27px;
+            display: block;
+        }
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        background: $bg-color;
+        transition: 0.5s;
+        opacity: 0.7;
+        border-color: $icon-color;
+    }
+}
+
+.best-sellers__slider {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @media (max-width: 1199px) {
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+        // left: calc(50% - 110px);
+    }
+      
+}
+
+.best-sellers__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+.best-sellers__btn {
+
+    &--prev {
+
+        @media (max-width: 1199px) {
+            top: 50%;
+            left: 0;
+        }
+       
+    }
+
+    &--next {
+
+        @media (max-width: 1199px) {
+            top: 50%;
+            right: 0;
+        }
+       
+    }
+}

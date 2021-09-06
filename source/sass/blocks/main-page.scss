@@ -1,0 +1,15 @@
+.main-page {
+    flex-grow: 1;
+    margin-top: 100px;
+
+    &--no-top-spaced {
+        margin-top: 0;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 75px;
+    }
+}
+
+
+  

@@ -1,0 +1,35 @@
+.user-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user-actions__link {
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    outline: 0;
+    fill: $text-main-color;
+
+    &:not(:first-child) {
+        margin-left: 15px;
+
+        @media (max-width: 767px) {
+            margin-left: 20px;
+        }
+    }
+    
+    &:focus,
+    &:hover,
+    &:active {
+        transition: 0.5s;
+        fill: $icon-color;
+    }
+
+    @media (max-width: 767px) {
+        svg {
+          width: 14px;
+          height: 16px;
+        }
+    }
+}
