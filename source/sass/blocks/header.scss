@@ -30,7 +30,7 @@
 }
 
 .header__menu-button {
-    background: url("../../img/burger-icon.svg") no-repeat left center/24px 12px transparent;
+    background: url("../img/burger-icon.svg") no-repeat left center/24px 12px transparent;
     display: none;
     padding: 0;
     border: none;
@@ -58,7 +58,7 @@
     }
 
     &--active {
-        background: url("../../img/cross-icon.svg") no-repeat 0 0/18px 18px;
+        background: url("../img/cross-icon.svg") no-repeat 0 0/18px 18px;
 
         @media (max-width: 767px) {
             background-size: 14px 14px;
