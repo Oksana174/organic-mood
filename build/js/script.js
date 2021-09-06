@@ -13,6 +13,7 @@ if (button) {
     });
 };
 
+
 //   прокрутка при клике
 
 const menuLinks = document.querySelectorAll('.navigation__link[data-goto]');
@@ -49,7 +50,9 @@ if (menuLinks.length > 0) {
 
 let btnRight = document.querySelector('.reviews__btn--next');
 let btnLeft = document.querySelector('.reviews__btn--prev');
+let reviewsBlock = document.querySelector('.reviews');
 
+if (reviewsBlock) {
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
 let slideIndex = 0;
 
@@ -86,15 +89,19 @@ function showSlides(n) {
     slides[slideIndex - 1].classList.add('reviews__item--active');
 };
 
-btnRight.addEventListener('click', previousSlide);
-btnLeft.addEventListener('click', nextSlide);
+    btnRight.addEventListener('click', previousSlide);
+    btnLeft.addEventListener('click', nextSlide);
+};
+
 
 // слайдер для блока бестселлеры
 
 let btnNext = document.querySelector('.best-sellers__btn--next');
 let btnPrev = document.querySelector('.best-sellers__btn--prev');
+let bestSellerBlock = document.querySelector('.best-sellers');
 let slideIndexProduct = 0;
 
+if (bestSellerBlock) {
 showSlidesProduct(slideIndexProduct);
 
 function nextSlideProduct() {
@@ -127,3 +134,5 @@ function showSlidesProduct(n) {
 
 btnPrev.addEventListener('click', previousSlideProduct);
 btnNext.addEventListener('click', nextSlideProduct);
+
+};

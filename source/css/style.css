@@ -466,13 +466,6 @@ a {
   .header__menu-button:active, .header__menu-button:focus, .header__menu-button:hover {
     opacity: 0.5;
     transition: 0.2s; }
-  .header__menu-button--active {
-    background: url("../../img/cross-icon.svg") no-repeat 0 0/18px 18px; }
-    @media (max-width: 767px) {
-      .header__menu-button--active {
-        background-size: 14px 14px;
-        width: 22px;
-        height: 14px; } }
   @media (max-width: 1199px) {
     .header__menu-button {
       display: block;
@@ -481,10 +474,13 @@ a {
       margin-right: 40px; } }
   @media (max-width: 767px) {
     .header__menu-button {
-      height: 14px;
-      width: 22px;
       margin-right: 26px;
       background-size: 22px 11px; } }
+  .header__menu-button--active {
+    background: url("../../img/cross-icon.svg") no-repeat 0 0/18px 18px; }
+    @media (max-width: 767px) {
+      .header__menu-button--active {
+        background-size: 14px 14px; } }
 
 .header__navigation {
   flex-grow: 1; }
@@ -496,7 +492,7 @@ a {
       margin-left: 20px; } }
   @media (max-width: 767px) {
     .header__actions {
-      padding-right: 10px; } }
+      padding-right: 15px; } }
 
 .navigation {
   display: flex;
@@ -1797,16 +1793,20 @@ a {
   border: 2px solid #DBDCE0; }
   @media (max-width: 1199px) {
     .reviews__block {
-      height: 313px; } }
+      height: 313px;
+      padding: 0 15px; } }
   @media (max-width: 767px) {
     .reviews__block {
       max-width: 450px;
       width: 80%;
       height: 252px;
-      margin: -100px auto 0; } }
+      margin: -100px auto 0;
+      padding: 0 10px; } }
 
 .reviews__image {
   flex-shrink: 0;
+  height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
