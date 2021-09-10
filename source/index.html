@@ -22,27 +22,27 @@
     <meta property="twitter:description" content="Продукты для здоровья и красоты на основе коллоидного наносеребра торговой марки Argitos.">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
-    <link  rel = "apple-touch-icon"  sizes = "57x57"  href = "favicon/apple-icon-57x57.png" > 
-    <link  rel = "apple-touch-icon"  sizes = "60x60"  href = "favicon/ apple -icon-60x60.png " > 
-    <link  rel = " apple-touch-icon "  sizes = " 72x72 "  href = "favicon/apple-icon-72x72.png " > 
-    <link  rel = " apple-touch-icon "  sizes = "76x76"  href = "favicon/apple-icon-76x76.png" > 
-    <link  rel = "apple-touch-icon "  sizes = " 114x114 "  href = "favicon/apple-icon-114x114.png "> 
-    <link  rel = "apple-touch-icon"  sizes = "120x120"  href = "favicon/apple-icon-120x120.png" > 
-    <link  rel = "apple-touch-icon"  sizes = "144x144"  href = "favicon/ apple-icon-144x144.png " > 
-    <link  rel = " apple-touch-icon "  sizes = " 152x152 "  href = "favicon /apple-icon-152x152.png " > 
-    <link  rel = " apple-touch-icon "  размеры = "180x180"  href = "favicon/apple-icon-180x180.png" > 
-    <link  rel = "icon"  type = "image / png"  sizes = "192x192"  href = "favicon/android-icon-192x192.png" > 
-    <link  rel = "icon"  type = "image / png"  sizes = "32x32"  href = "favicon/favicon-32x32.png" > 
-    <link  rel = "icon"  type = "image / png"  sizes = "96x96"  href = "favicon/favicon-96x96.png" > 
-    <link  rel = "icon"  type = "image / png"  sizes = "16x16"  href = "favicon/ favicon-16x16. png " > 
-    <link  rel = " manifest " href = "favicon/manifest.json" > 
-    <meta  name ="msapplication-TileColor"  content = "#ffffff" > 
-    <meta  name = "msapplication-TileImage"  content = "favicon/ms-icon-144x144.png" > 
+    <link  rel = "apple-touch-icon"  sizes = "57x57"  href = "favicon/apple-icon-57x57.png"> 
+    <link  rel = "apple-touch-icon"  sizes = "60x60"  href = "favicon/apple-icon-60x60.png"> 
+    <link  rel = "apple-touch-icon"  sizes = "72x72"  href = "favicon/apple-icon-72x72.png"> 
+    <link  rel = "apple-touch-icon"  sizes = "76x76"  href = "favicon/apple-icon-76x76.png"> 
+    <link  rel = "apple-touch-icon"  sizes = "114x114"  href = "favicon/apple-icon-114x114.png"> 
+    <link  rel = "apple-touch-icon"  sizes = "120x120"  href = "favicon/apple-icon-120x120.png"> 
+    <link  rel = "apple-touch-icon"  sizes = "144x144"  href = "favicon/apple-icon-144x144.png"> 
+    <link  rel = "apple-touch-icon"  sizes = "152x152"  href = "favicon/apple-icon-152x152.png"> 
+    <link  rel = "apple-touch-icon"  sizes = "180x180"  href = "favicon/apple-icon-180x180.png"> 
+    <link  rel = "icon"  type = "image/png"  sizes = "192x192"  href = "favicon/android-icon-192x192.png"> 
+    <link  rel = "icon"  type = "image/png"  sizes = "32x32"  href = "favicon/favicon-32x32.png"> 
+    <link  rel = "icon"  type = "image/png"  sizes = "96x96"  href = "favicon/favicon-96x96.png"> 
+    <link  rel = "icon"  type = "image/png"  sizes = "16x16"  href = "favicon/favicon-16x16.png"> 
+    <link  rel = "manifest" href = "favicon/manifest.json"> 
+    <meta  name ="msapplication-TileColor"  content = "#ffffff"> 
+    <meta  name = "msapplication-TileImage"  content = "favicon/ms-icon-144x144.png"> 
     <meta  name = "theme-color"  content = "#ffffff" >
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="">
+<body class="main-body">
     <div style="display: none;">
         <svg xmlns="http://www.w3.org/2000/svg">
             <symbol viewBox="0 0 27 14" id="arrow-left">
@@ -197,15 +197,13 @@
                             <a class="navigation__link" href="#" data-goto="#footer-main">Контакты</a>
                         </li>
                     </ul>
-                    <ul class="navigation__contacts social">
-                        <li class="social__item">
-                            <a class="social__link" href="https://www.instagram.com/organic_mood_com/?hl=ru" target="_blank" aria-label="Instagram" data-goto="#">
-                                <svg width="22" height="22"; >
-                                    <use xlink:href="#instagram-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="navigation__contacts social">
+                        <a class="social__link" href="https://www.instagram.com/organic_mood_com/?hl=ru" target="_blank" aria-label="Instagram" data-goto="#">
+                            <svg width="22" height="22">
+                                <use xlink:href="#instagram-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </nav>
             <div class="header__actions user-actions">
@@ -286,21 +284,21 @@
                 <p class="best-sellers__description">Легендарные продукты, завоевавшие любовь наших клиентов</p>
                 <a class="best-sellers__link button" href="#catalog-main" aria-label="Смотреть все">Смотреть все</a>
             </div>
-            <div class="best-sellers__slider slider swiper-container">
+            <div class="best-sellers__slider slider">
                 <div class="best-sellers__list slider__list">
-                    <div class="swiper-slide slider__item product-card product-card--active">
+                    <div class="slider__item product-card product-card--active">
                         <img class="product-card__image" src="img/best-sellers01.png" alt="Спрей для горла и носа" height="260" width="260">
                         <h3 class="product-card__title">Спрей для горла и носа</h3>
                         <p class="product-card__price">350 руб.</p>
                         <a class="product-card__link" href="#" aria-label="Подробнее">Подробнее</a>
                     </div>
-                    <div class="swiper-slide slider__item product-card">
+                    <div class="slider__item product-card">
                         <img class="product-card__image" src="img/catalog_01-02.png" alt="Сыворотка для интимной гигиены" height="260" width="260">
                         <h3 class="product-card__title">Сыворотка для интимной гигиены</h3>
                         <p class="product-card__price">590 руб.</p>
                         <a class="product-card__link" href="#" aria-label="Подробнее">Подробнее</a>
                     </div>
-                    <div class="swiper-slide slider__item product-card">
+                    <div class="slider__item product-card">
                         <img class="product-card__image" src="img/catalog_01-01.png" alt="СЫВОРОТКА ДЛЯ ВОЛОС" height="260" width="260">
                         <h3 class="product-card__title">Сыворотка для волос</h3>
                         <p class="product-card__price">590 руб.</p>
@@ -321,17 +319,41 @@
         <section class="follow">
             <div class="follow__container container">
                 <div class="follow__image-wrapper">
-                    <img class="follow__image" src="img/follow_img01.jpg" alt="Присоединяйтесь к нам" height="233" width="233">
-                    <img class="follow__image" src="img/follow_img02.jpg" alt="Присоединяйтесь к нам" height="233" width="233">
-                    <img class="follow__image" src="img/follow_img03.jpg" alt="Присоединяйтесь к нам" height="233" width="233">
-                    <img class="follow__image" src="img/follow_img04.jpg" alt="Присоединяйтесь к нам" height="233" width="233">
-                    <img class="follow__image" src="img/follow_img08.jpg" alt="Присоединяйтесь к нам" height="233" width="233">
-                    <img class="follow__image" src="img/follow_img05.jpg" alt="Присоединяйтесь к нам" height="233" width="233">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/follow_img01-mob.jpg 1x, img/follow_img01-mob@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/follow_img01-lap.jpg 1x, img/follow_img01-lap@2x.jpg 2x">
+                        <img class="follow__image" src="img/follow_img01.jpg" srcset="img/follow_img01@2x.jpg 2x" alt="Присоединяйтесь к нам" height="233" width="233">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/follow_img02-mob.jpg 1x, img/follow_img02-mob@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/follow_img02-lap.jpg 1x, img/follow_img02-lap@2x.jpg 2x">
+                        <img class="follow__image" src="img/follow_img02.jpg" srcset="img/follow_img02@2x.jpg 2x" alt="Присоединяйтесь к нам" height="233" width="233">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/follow_img03-mob.jpg 1x, img/follow_img03-mob@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/follow_img03-lap.jpg 1x, img/follow_img03-lap@2x.jpg 2x">
+                        <img class="follow__image" src="img/follow_img03.jpg" srcset="img/follow_img03@2x.jpg 2x" alt="Присоединяйтесь к нам" height="233" width="233">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/follow_img04-mob.jpg 1x, img/follow_img04-mob@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/follow_img04-lap.jpg 1x, img/follow_img04-lap@2x.jpg 2x">
+                        <img class="follow__image" src="img/follow_img04.jpg" srcset="img/follow_img04@2x.jpg 2x" alt="Присоединяйтесь к нам" height="233" width="233">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/follow_img06-mob.jpg 1x, img/follow_img06-mob@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/follow_img06-lap.jpg 1x, img/follow_img06-lap@2x.jpg 2x">
+                        <img class="follow__image" src="img/follow_img06.jpg" srcset="img/follow_img06@2x.jpg 2x" alt="Присоединяйтесь к нам" height="233" width="233">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="img/follow_img05-mob.jpg 1x, img/follow_img05-mob@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/follow_img05-lap.jpg 1x, img/follow_img05-lap@2x.jpg 2x">
+                        <img class="follow__image" src="img/follow_img05.jpg" srcset="img/follow_img05@2x.jpg 2x" alt="Присоединяйтесь к нам" height="233" width="233">
+                    </picture>
                 </div>
                 <div class="follow__content">
                     <h2 class="follow__title">Присоединяйтесь к нам</h2>
                     <p class="follow__text">Подпишитесь на наш аккаунт @organic_mood_com и узнавайте о новиках и акциях первыми</p>
-                    <a class="follow__link button" href="#" aria-label="Подписаться">Подписаться</a>
+                    <a class="follow__link button" href="https://www.instagram.com/organic_mood_com/?hl=ru" aria-label="Подписаться">Подписаться</a>
                 </div>
             </div>
         </section>
@@ -348,7 +370,7 @@
                                 <h4 class="product__title">Сыворотка для волос </h4>
                                 <span class="product__price">590 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -358,7 +380,7 @@
                                 <h4 class="product__title">Сыворотка для интимной гигиены</h4>
                                 <span class="product__price">590 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -368,7 +390,7 @@
                                 <h4 class="product__title">Сыворотка после загара</h4>
                                 <span class="product__price">400 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -378,7 +400,7 @@
                                 <h4 class="product__title">Средство от грибка и <br> запаха ног</h4>
                                 <span class="product__price">550 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -388,7 +410,7 @@
                                 <h4 class="product__title">Ополаскиватель для полости рта</h4>
                                 <span class="product__price">390 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -398,7 +420,7 @@
                                 <h4 class="product__title">Сыворотка для лица</h4>
                                 <span class="product__price">550 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -408,7 +430,7 @@
                                 <h4 class="product__title">Лосьон после бритья</h4>
                                 <span class="product__price">550 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -418,7 +440,7 @@
                                 <h4 class="product__title">Жидкость для ирригатора</h4>
                                 <span class="product__price">490 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -428,7 +450,7 @@
                                 <h4 class="product__title">Спрей-помощь после укуса комаров</h4>
                                 <span class="product__price">290 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                 </ul>
@@ -445,7 +467,7 @@
                                 <h4 class="product__title">Спрей для горла и носа</h4>
                                 <span class="product__price">350 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -455,7 +477,7 @@
                                 <h4 class="product__title">Спрей универсальный</h4>
                                 <span class="product__price">396 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -465,7 +487,7 @@
                                 <h4 class="product__title">Спрей антибактериальный</h4>
                                 <span class="product__price">510 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -475,7 +497,7 @@
                                 <h4 class="product__title">Антибактериальный очиститель кондиционеров</h4>
                                 <span class="product__price">590 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                     <li class="catalog__item product">
@@ -485,7 +507,7 @@
                                 <h4 class="product__title">Питьевой раствор</h4>
                                 <span class="product__price">450 ₽</span>
                             </div>
-                            <button class="product__btn button">Подробнее</button>
+                            <span class="product__btn button">Подробнее</span>
                         </a>
                     </li>
                 </ul>
@@ -509,45 +531,13 @@
                             <img class="reviews__image" src="img/photo_reviews_03.jpg" width="500" height="210" alt="Отзыв">
                         </li>
                     </ul>
-                    <div class="reviews__contriols slider__controls">
+                    <div class="reviews__controls">
                         <button class="reviews__btn--prev slider__button slider__button--prev" type="button" aria-label="Вперед"></button>
                         <button class="reviews__btn--next slider__button slider__button--next" type="button" aria-label="Назад"></button>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- <section class="contacts">
-            <div class="contacts__container container">
-                <div class="contacts__content">
-                    <h2 class="contacts__title">Контакты</h2>
-                    <ul class="contacts__list">
-                        <li class="contacts__item">
-                            <h3>Телефон</h3>
-                            <a class="contacts__link" href="tel:+79238889060" aria-label="Телефон">+7 (923) 888-90-60</a>
-                        </li>
-                        <li class="contacts__item">
-                            <h3>E-mail</h3>
-                            <a class="contacts__link" href="mailto:info@maroon.ru" aria-label="E-mail">info@maroon.ru</a>
-                        </li>
-                    </ul>
-                    <ul class="contacts__social social">
-                        <li class="social__item">
-                            <a class="social__link" href="#"  aria-label="Instagram">
-                                <svg width="22" height="22"; >
-                                    <use xlink:href="#instagram-icon"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social__item visually-hidden">
-                            <a class="social__link" href="#" aria-label="vk">
-                                <img src="#" alt="vk">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-          </section> -->
     </main>
     <footer class="footer" id="footer-main">
         <div class="footer__content container">
@@ -558,33 +548,29 @@
             </a>
             <ul class="footer__list">
                 <li class="footer__item"><a class="footer__link" href="#catalog-main">Каталог</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Сертификаты</a></li>
+                <li class="footer__item"><a class="footer__link" href="certificates.html">Сертификаты</a></li>
             </ul>
             
             <ul class="footer__contacts-list">
                 <li class="footer__contacts-item">
-                    <a class="footer__contacts-link" href="tel:+79238889060" aria-label="Телефон">+7 (923) 888-90-60</a>
+                    <a class="footer__contacts-link" href="tel:+79507309193" aria-label="Телефон">+7 (950) 730-91-93</a>
                 </li>
                 <li class="footer__contacts-item">
-                    <a class="footer__contacts-link" href="mailto:info@maroon.ru" aria-label="E-mail">info@maroon.ru</a>
+                    <a class="footer__contacts-link" href="tel:+79068667667" aria-label="Телефон">+7 (906) 866-76-67</a>
+                </li>
+                <li class="footer__contacts-item">
+                    <a class="footer__contacts-link" href="mailto:shemeleva.e@icloud.com" aria-label="E-mail">shemeleva.e@icloud.com</a>
                 </li>
             </ul>
 
-            <ul class="footer__social social">
-                <li class="social__item">
-                    <a class="social__link" href="https://www.instagram.com/organic_mood_com/?hl=ru"  aria-label="Instagram" target="_blank">
-                        <svg width="26" height="26"; >
-                            <use xlink:href="#instagram-icon">
-                            </use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social__item visually-hidden">
-                    <a class="social__link" href="#" aria-label="vk">
-                        <img src="#" alt="vk">
-                    </a>
-                </li>
-            </ul>
+            <div class="footer__social social">
+                <a class="social__link" href="https://www.instagram.com/organic_mood_com/?hl=ru"  aria-label="Instagram" target="_blank">
+                    <svg width="26" height="26">
+                        <use xlink:href="#instagram-icon">
+                        </use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </footer>
 

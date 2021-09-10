@@ -116,18 +116,9 @@
     height: 1px;
 }
 
-.card__accordion-head {
-    position: relative;
-    padding-top: 13px;
-    padding-bottom: 13px;
-}
-
-.card__accordion-head:hover {
-    cursor: pointer;
-}
-
-
 .card__accordion-title {
+    padding-top: 18px;
+    padding-bottom: 18px;
     font-weight: 500;
     margin: 0;
 
@@ -182,7 +173,6 @@
         }
     }
 }
-  
 
 .card__button {
     padding: 7px 26px 10px;
@@ -202,6 +192,6 @@
     &:active {
         border-color: $text-main-color;
     }
-  }
+}
   
 

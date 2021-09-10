@@ -1,0 +1,20 @@
+.certificates {
+    padding: 20px;
+}
+
+.certificates__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificates__item:not(:last-child) {
+    margin-bottom: 80px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+}

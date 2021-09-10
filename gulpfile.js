@@ -12,7 +12,6 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
 const del = require("del");
-// const uglify = require("gulp-uglify");
 const terser = require("gulp-terser");
 
 
@@ -55,14 +54,6 @@ const html = () => {
 exports.html = html;
 
 // script
-
-// const scripts = () => {
-//   return gulp.src("source/js/**/*.js")
-//       .pipe(uglify())
-//       .pipe(rename("script.min.js"))
-//       .pipe(gulp.dest("build/js"));
-// }
-// exports.scripts = scripts;
 
 function scripts() {
   return gulp.src("source/js/**/*.js")

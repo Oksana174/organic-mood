@@ -134,5 +134,4 @@ function showSlidesProduct(n) {
 
 btnPrev.addEventListener('click', previousSlideProduct);
 btnNext.addEventListener('click', nextSlideProduct);
-
 };

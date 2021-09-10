@@ -21,7 +21,6 @@
     @media (max-width: 767px) {
         flex-direction: column;
         justify-content: center;
-        // align-items: stretch;
     }
 }
 
@@ -125,6 +124,9 @@
     }
 }
 
+.reviews__controls {
+    display: block;
+}
 
 .reviews__btn {
     &--prev {
@@ -154,6 +156,4 @@
             right: 12%;
         }
     }
-
-
 }

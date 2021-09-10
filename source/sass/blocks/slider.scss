@@ -1,22 +1,18 @@
 .slider {
-    width: 100%;
     margin: 0;
 }
   
 .slider__button-container {
     display: none;
 
-    @media (max-width: 1190px) {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+    @media (max-width: 1199px) {
+        display: block;
     } 
 }
 
 .slider__button {
     position: absolute;
-    // z-index: 0;
-    // display: flex;
+    z-index: 0;
     height: 12px;
     width: 26px;
     margin: 0;
@@ -30,8 +26,7 @@
     background-position: 0 0;
 
     &--prev {
-        background-image: url("../img/arrow-left.svg");
-        
+        background-image: url("../img/arrow-left.svg"); 
     }
 
     &--next {

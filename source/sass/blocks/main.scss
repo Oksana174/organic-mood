@@ -28,6 +28,10 @@ a {
     color: $text-main-color;
 }
 
+picture {
+    display: flex;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;

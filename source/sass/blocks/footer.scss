@@ -25,7 +25,7 @@
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    margin-left: 6%;
+    margin-left: 5%;
     padding: 0;
 
     @media (max-width: 1199px) {
@@ -73,12 +73,8 @@
 }
 
 .footer__social {
-    min-width: 140px;
+    min-width: 80px;
     margin: 0;
-
-    @media (max-width: 1199px) {
-        min-width: 80px;
-    }
 
     @media (max-width: 767px) {
         margin-top: 20px;
@@ -88,7 +84,7 @@
 
 .footer__contacts-list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
@@ -96,8 +92,12 @@
     padding: 0;
     margin-left: auto;
 
+    @media (max-width: 1199px) {
+        flex-direction: column;
+    }
+
     @media (max-width: 767px) {
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 0;   
     }
 }

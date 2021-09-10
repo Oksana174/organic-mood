@@ -17,7 +17,7 @@
       
     @media (max-width: 767px) {
         flex-direction: column-reverse;
-        // justify-content: flex-start;
+        align-items: center;
     }
 }
   
@@ -34,7 +34,7 @@
         min-width: 354px;
         max-width: 354px;
 
-        & > .follow__image:nth-child(3n+1) {
+        & > picture:nth-child(3n+1) {
            display: none;
         }
     }
@@ -42,9 +42,9 @@
     @media (max-width: 767px) {
         width: 100%;
         min-width: 0;
-        max-width: none; 
+        max-width: 320px; 
 
-        & > .follow__image {
+        & > picture {
             width: 50%;
         }
     }
